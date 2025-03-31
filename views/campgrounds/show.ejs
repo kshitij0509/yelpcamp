@@ -19,8 +19,10 @@
           <%= showcampground.location %>
         </li>
         <li class="list-group-item">
-          Submitted by : <%= showcampground.author.username %>
+          Submitted by : <%= (showcampground.author && showcampground.author.username) ? showcampground.author.username : 'Unknown' %>
         </li>
+        
+        
         <li class="list-group-item"><%= showcampground.price %></li>
       </ul>
 
